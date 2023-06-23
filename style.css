@@ -1,8 +1,14 @@
 .webstudio {
+    text-decoration: none;
     font-family: 'Raleway', sans-serif;
     size: 26px;
     font-weight: 700;
-
+}
+.web {
+    color: rgb(92, 42, 231);
+}
+.studio {
+    color: rgb(0, 0, 0);
 }
 nav {
     font-family: 'Roboto', sans-serif;
