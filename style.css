@@ -1,52 +1,66 @@
-.webstudio {
+body {
+    font-family: 'Roboto', sans-serif ;
+}
+.header {
+    font-weight: 500;
+    font-size: 14px;
+}
+.header-webstudio {
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     font-weight: 700;
 }
-.web {
-    color: rgb(92, 42, 231);
-}
-.studio {
+.header-studio {
     color: rgb(0, 0, 0);
 }
-nav {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-}
-h1 { 
-    font-family: 'Roboto', sans-serif ;
+.main-heading {
     font-weight: 900;
     font-size: 44px;
 }
-button {
-    font-family: 'Roboto', sans-serif;
+.main-button {
     font-weight: 700;
     font-size: 16px;
 }
-h3 {
-    font-family: 'Roboto', sans-serif;
+.main-subheading {
     font-weight: 700;
     font-size: 14px;
 }
-p {
-    font-family: 'Roboto', sans-serif;
+.main-description {
     font-weight: 400;
     font-size: 14px;
 }
-h2 {
-    font-family: 'Roboto', sans-serif;
+.section-heading {
     font-weight: 700;
     font-size: 36px;
 }
-h4 {
-    font-family: 'Roboto', sans-serif;
+.main-name {
     font-weight: 500;
     font-size: 16px;
 }
-footer a {
-    font-family: 'Roboto', sans-serif;
+.footer {
     font-weight: 400;
     font-size: 14px;
+}
+.footer-webstudio {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+}
+.footer-studio {
+    color: rgb(0, 0, 0);
+}
+.potfolio-button {
+    font-weight: 500;
+    font-size: 16px;
+}
+.main-link {
+    font-weight: 700;
+    font-size: 18px;
+}
+.image-description
+{
+ font-weight: 400;  
+ font-size: 16px;
 }
