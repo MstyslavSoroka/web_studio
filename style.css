@@ -14,28 +14,31 @@ a {
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 body {
   font-family: "Roboto", sans-serif;
 }
-
+/* ==================================================================================== */
 .header-webstudio {
-  text-decoration: none;
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
   color: #2196F3;
   margin-right: 93px;
+
 }
 
-.header-studio {
+.header-webstudio {
   color: rgb(0, 0, 0);
 }
-
+.header-web {
+  color: #2196F3;
+}
 .header {
+  justify-content: center;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   font-weight: 500;
   font-size: 14px;
@@ -43,8 +46,9 @@ body {
 }
 
 .header-menu {
-  margin-right: 344px;
   display: flex;
+  width: 218px;
+  margin-right: 344px;
 }
 
 .header-contact {
@@ -54,14 +58,14 @@ body {
 .header-menu-link {
   margin-right: 50px;
   color: #212121;
-  ;
 }
-
 .header-contact-link {
   color: #757575;
-  margin-right: auto;
+  
 }
-
+.header-contact-link:first-child{
+  margin-right: 30px;
+}
 .header-menu-link:hover {
   color: #2196F3;
 }
@@ -69,7 +73,9 @@ body {
 .header-contact-link:hover {
   color: #2196F3;
 }
+/* ======================================================header================================================== */
 .banner {
+  margin-top: 0;
   text-align: center;
   height: 600px;
   background-color: #2f303a
@@ -107,6 +113,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   width: 270px;
+  color: #757575;
 }
 
 .main-description-job {
@@ -119,11 +126,13 @@ body {
   font-weight: 700;
   font-size: 36px;
 }
-
+.main-list-item {
+  margin-right: 30px;
+}
 .main-list-images {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
+  margin-bottom: 94px;
 }
 
 .main-list-team {
@@ -135,10 +144,19 @@ body {
   background-color: #F5F4FA;
   padding: 5px;
 }
+.main-description-job {
+  color: #757575;
+  text-align: center;
+}
 
+.team-item {
+  background-color: #fff;
+  margin-bottom: 94px;
+}
 .main-name {
   font-weight: 500;
   font-size: 16px;
+  text-align: center;
 }
 
 .footer {
@@ -194,6 +212,7 @@ body {
 
 .footer-webstudio {
   color: #2196F3;
+  margin-bottom: 20px;
 }
 
 .footer-address {
@@ -202,4 +221,7 @@ body {
 
 .footer-contact {
   color: white;
+}
+.footer-list-item {
+  margin-bottom: 9px;
 }
