@@ -94,7 +94,7 @@ body {
   margin-top: 0;
   text-align: center;
   height: 600px;
-  background-color: #2f303a;
+  background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(img/background.jpg);
   margin-bottom: 94px;
 }
 
@@ -116,6 +116,7 @@ body {
   display: block;
   width: 216px;
   height: 50px;
+  border-radius: 5px;
 }
 
 .main-list {
@@ -148,6 +149,34 @@ body {
 }
 .main-list-item {
   margin-right: 30px;
+}
+.main-subheading::before  {
+  display: block;
+  width: 270px;
+  height: 120px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #F5F4FA;
+}
+.main-subheading:nth-child(1)::before  {
+  content: "";
+  background-image: url(img/antenna1.svg);
+  
+}
+   .main-subheading:nth-child(2)::before  {
+ content: "";
+  background-image: url(img/clock1.svg);
+  
+}
+.main-subheading:nth-child(3)::before  {
+  content: "";
+  background-image: url(img/diagram1.svg);
+  
+}
+.main-subheading:nth-child(4)::before  {
+  content: "";
+  background-image: url(img/astronaut1.svg);
+  
 }
 .main-list-images {
   display: flex;
@@ -186,14 +215,21 @@ body {
   font-weight: 500;
   font-size: 16px;
   justify-content: center;
+  margin-bottom: 34px;
 }
 .portfolio-button {
   border: none;
   margin-right: 8px;
+  font-size: 16px;
+  border-radius: 5px;
 }
 .portfolio-button:hover {
  background-color: #2196F3;
  color: #fff;
+ box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+}
+.button-description {
+  margin: 6px 22px 6px 22px;
 }
 .main-link {
   font-weight: 700;
