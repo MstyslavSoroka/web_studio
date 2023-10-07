@@ -61,6 +61,7 @@ body {
   font-size: 14px;  
 }
 
+
 .header-menu {
   display: flex;
   width: 218px;
@@ -89,6 +90,12 @@ body {
 .header-menu-link {
   color: #212121;
   margin-left: 10px;
+}
+.header-menu-link {
+  margin-right: 50px;
+}
+.header-menu-link:hover {
+  color: #2196F3;
 }
 .header-contact-link {
   color: #757575;
@@ -139,6 +146,7 @@ body {
 .main-subheading {
   font-weight: 700;
   font-size: 14px;
+  margin-bottom: 10px;
 }
 
 .main-description {
@@ -160,10 +168,24 @@ body {
   margin-top: 94px;
   margin-bottom: 50px;
 }
+.description-svg {
+  height: 70px;
+  width: 70px;
+  
+}
+.svg-div {
+  display: flex;
+  height: 120px;
+  width: 270px;
+  background-color: #F5F4FA;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
 .main-list-item {
   margin-right: 30px;
 }
-.main-subheading::before  {
+/* .main-subheading::before  {
   display: block;
   width: 270px;
   height: 120px;
@@ -190,7 +212,7 @@ body {
   content: "";
   background-image: url(img/astronaut1.svg);
   
-}
+} */
 .main-list-images {
   display: flex;
   justify-content: space-between;
@@ -337,10 +359,10 @@ body {
   flex-direction: row;
 }
 .footer-div {
-  padding-top: 60px;
+  margin-top: 60px;
 }
 .footer-block {
-  margin-top: 20px;
+ display: flex;
 }
 .footer-webstudio {
   text-decoration: none;
@@ -353,13 +375,15 @@ body {
 .footer-studio {
   color: white
 }
-
 .footer-address {
   color: white;
 }
 
 .footer-contact {
   color: white;
+}
+.footer-list {
+  margin-top: 20px;
 }
 .footer-list-item {
   color: #fff;
@@ -398,9 +422,11 @@ body {
   font-size: 14px;
   font-weight: 700;
   color: #fff; 
+  margin-bottom: 20px;
 }
 .footer-wrapper {
-  
+  margin-left: 70px;
+  padding-bottom: 100px;
 }
 .footer-svg-list {
   display: flex;
