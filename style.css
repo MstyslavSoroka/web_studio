@@ -59,9 +59,14 @@ body {
   align-items: center;
   font-weight: 500;
   font-size: 14px;  
+  border-bottom: 1px solid #ECECEC;
 }
 
-
+.header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .header-menu {
   display: flex;
   width: 218px;
@@ -278,6 +283,9 @@ body {
   font-size: 16px;
   justify-content: center;
   margin-bottom: 34px;
+}
+.button-section {
+  margin-top: 94px;
 }
 .portfolio-button {
   border: none;
