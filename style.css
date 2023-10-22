@@ -37,6 +37,50 @@ body {
   font-family: "Roboto", sans-serif;
 }
 /* ==================================================================================== */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+ width: 100%;
+ height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+ }
+ 
+ 
+ .backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+ }
+ 
+ .no-scroll {
+  overflow: hidden;
+ }
+ 
+ .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 581px;
+  width: 528px;
+  background-color: rgb(255, 255, 255);
+  transform: translate(-50%, -50%);
+ }
+
+ .registration-label {
+  display: flex;
+  flex-direction: column;
+  
+ }
+ .registration-label>input {
+  width: 448px;
+  height: 40px;
+  align-self: center;
+ }
+
+/* ===================================================================================================  */
+
+
 .header-webstudio {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
@@ -132,7 +176,7 @@ body {
   margin-bottom: 23px;
 }
 
-.main-button {
+.btn-open {
   color: white;
   background-color: #2196F3;
   font-weight: 700;
