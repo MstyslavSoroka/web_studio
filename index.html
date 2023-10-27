@@ -53,24 +53,44 @@
       <button class="btn-open" data-modal-open>Замовити послугу</button>
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <button class="btn" data-modal-close>x</button>
+
+          <button class="btn" data-modal-close>
+            <svg class="cross">
+              <use href="./icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <h2 class="modal-heading">Залиште свої дані, ми вам передзвонимо</h2>
           <form class="registration-form">
             <label class="registration-label">
-              Ім'я 
+              <p>Ім'я</p>
+              <svg>
+                <use href="./icons.svg#icon-human"></use>
+              </svg>
               <input type="text" name="Name">
             </label>
             <label class="registration-label">
-              Телефон
+              <p>Телефон</p>
+              <svg>
+                <use href="./icons.svg#icon-phone"></use>
+              </svg>
               <input type="tel" name="tel" />
             </label>
             <label class="registration-label">
-              Пошта
+              <p>Пошта</p>
+              <svg>
+                <use href="./icons.svg#icon-email2"></use>
+              </svg>
               <input type="email" name="email" />
             </label>
             <label class="registration-label">
-              Коментар
-              <input type="text" name="commentary">
+              <p>Коментар</p>
+              <textarea name="comment" id="comment"></textarea>
             </label>
+            <label class="checkbox">
+              <input type="checkbox" name="">
+              Погоджуюся з розсилкою та приймаю <span class="contract-span">Умови договору</span>
+            </label>
+            <button class="send-button" type="submit">Відправити</button>
           </form>
         </div>
       </div>
@@ -336,6 +356,20 @@
               </svg>
             </li>
           </ul>
+        </div>
+        <div class="footer-form">
+          <form>
+            <label>
+              <h5 class="footer-heading">підпишіться на розсилку</h5>
+              <input class="footer-email" type="email" name="email" placeholder="    E-mail">
+            </label>
+          <button class="subscribe-button" type="submit"><div class="button-wrapper">Підписатися 
+            <svg class="icon-send">
+              <use href="./icons.svg#icon-send"></use>
+            </svg>
+          </div>
+          </button>
+          </form>
         </div>
       </div>
   </footer>
