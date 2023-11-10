@@ -238,7 +238,23 @@ body {
   height: 3px;
   border-radius: 4px;
   background-color: #2196f3;
+  animation: animate125 3000ms infinite 1000ms;
 }
+
+@keyframes animate125 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 .active {
   color: #2196f3;
 }
@@ -247,18 +263,29 @@ body {
 }
 .header-menu-link:hover {
   color: #2196f3;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .header-contact-link {
   color: #757575;
   margin-left: 10px;
 }
 .header-contact-item:hover {
-  color: #2196f3;
   fill: #2196f3;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 .header-contact-link:hover {
   color: #2196f3;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 /* ======================================================header================================================== */
 .banner {
@@ -411,6 +438,7 @@ body {
   margin-bottom: 30px;
 }
 .svg-list-item {
+  background-color: #fff;
   display: flex;
   height: 44px;
   width: 44px;
@@ -419,10 +447,19 @@ body {
   justify-content: center;
   border-radius: 25px;
 }
-.svg-list-item:hover,
-.icon:hover {
+.svg-list-item:hover {
   background-color: #2196f3;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
+.svg-list-item:hover>svg {
   fill: #fff;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 .team-section {
@@ -461,11 +498,16 @@ body {
   margin-right: 8px;
   font-size: 16px;
   border-radius: 5px;
+  background-color: #f0f0f0;
 }
 .portfolio-button:hover {
   background-color: #2196f3;
   color: #fff;
   box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+  transition-property: background-color;
+  transition-duration: 1250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .button-description {
   margin: 6px 22px 6px 22px;
@@ -538,8 +580,19 @@ body {
   width: 170px;
   border: 1px solid #afb1b8;
 }
+.clients-list-item:hover>svg {
+  fill: #2196f3;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
 .clients-list-item:hover {
   border: 1px solid #2196f3;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .clients-list-item:not(:last-child) {
   margin-right: 30px;
@@ -548,9 +601,6 @@ body {
   height: 60px;
   width: 106px;
   fill: #afb1b8;
-}
-.client-svg:hover {
-  fill: #2196f3;
 }
 /* ======================================================================Footer====================================================================================== */
 .footer {
