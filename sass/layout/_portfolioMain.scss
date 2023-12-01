@@ -1,0 +1,59 @@
+.main-link {
+    font-weight: 700;
+    font-size: 18px;
+    color: #212121;
+    margin-top: 20px;
+    margin-left: 24px;
+  }
+  
+  .image-description {
+    color: #757575;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 10px 0 20px 24px;
+  }
+  
+  .main-portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 27px;
+  }
+  
+  .main-portfolio-list:nth-last-child(-n + 3) {
+    margin-bottom: 94px;
+  }
+  
+  .portfolio-main {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #eeeeee;
+    position: relative;
+  }
+  
+  .portfolio-main:hover {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  }
+  
+  .overlay {
+    position: absolute;
+    transition: 0.5s ease;
+    height: 294px;
+    width: 370px;
+    top: 0;
+    background-color: #2196F3E5;
+    opacity: 0;
+  }
+  
+  .overlay-p {
+    font-weight: 400px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 28px;
+    width: 300px;
+    margin: 63px 24px 63px 24px;
+  }
+  
+  .portfolio-main:hover .overlay {
+    opacity: 0.9;
+  }
+  

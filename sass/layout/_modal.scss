@@ -1,0 +1,180 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .no-scroll {
+    overflow: hidden;
+  }
+  
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 581px;
+    width: 528px;
+    background-color: rgb(255, 255, 255);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .modal.is-visible {
+    opacity: 1;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+    }
+  }
+  
+  .modal {
+    animation: fadeIn 0.25s ease-in-out;
+  }
+  
+  .modal.is-hidden {
+    animation: fadeOut 0.25s ease-in-out;
+  }
+  
+  .modal-heading {
+    font-weight: 700;
+    font-size: 20px;
+    color: #212121;
+  }
+  
+  .registration-label {
+    display: flex;
+    width: 448px;
+    height: 40px;
+    border: 1px solid #21212133;
+    border-radius: 4px;
+    margin-left: 41px;
+    align-items: center;
+  }
+  
+  .registration-form>p {
+    display: flex;
+    font-size: 12px;
+    font-weight: 400;
+    color: #757575;
+    margin-top: 10px;
+    align-self: flex-start;
+    margin-left: 40px;
+  }
+  
+  .registration-label>input {
+    width: 406px;
+    height: 38px;
+    border: none;
+  
+  }
+  
+  .comment-label>textarea {
+    margin-bottom: 20px;
+    max-height: 120px;
+    min-height: 120px;
+    max-width: 448px;
+    min-width: 448px;
+    border: 1px solid #21212133;
+    border-radius: 4px;
+  }
+  
+  .registration-label>textarea:hover {
+    border: 1px solid #2196f3;
+  }
+  
+  .registration-label:hover>svg,
+  .registration-label:hover {
+    fill: #2196f3;
+    border: 1px solid #2196f3;
+  }
+  
+  .registration-label:hover>svg {
+    border: none;
+  }
+  
+  .registration-label>svg {
+    height: 18px;
+    width: 18px;
+    margin: 11px 12px 11px 12px;
+  }
+  
+  .registration-label>svg:hover {
+    fill: #2196f3;
+  }
+  
+  .contract-span {
+    color: #2196f3;
+    text-decoration: underline;
+  }
+  
+  .send-button {
+    height: 50px;
+    width: 200px;
+    background-color: #2196f3;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    box-shadow: 0px 4px 4px 0px #00000026;
+    margin-top: 30px;
+  }
+  
+  .send-button:hover {
+    transform: scale(1.05);
+    background-color: #188ce8;
+  }
+  
+  .checkbox {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .checkbox>input {
+    margin-right: 5px;
+  }
+  
+  .btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #0000001a;
+    margin-left: 480px;
+    margin-top: 8px;
+  }
+  
+  .cross {
+    height: 11px;
+    width: 11px;
+  }
+  
+  .btn:hover>.cross {
+    fill: #2196f3;
+  }
+  

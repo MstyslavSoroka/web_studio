@@ -1,0 +1,132 @@
+.header-webstudio {
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #2196f3;
+    margin-right: 93px;
+  }
+  
+  .header-webstudio {
+    color: rgb(0, 0, 0);
+  }
+  
+  .header-web {
+    color: #2196f3;
+  }
+  
+  .header {
+    height: 80px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    border-bottom: 1px solid #ececec;
+  }
+  
+  .header-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header-menu {
+    display: flex;
+    width: 218px;
+    margin-right: 344px;
+  }
+  
+  .email-svg {
+    height: 12px;
+    width: 16px;
+  }
+  
+  .phone-svg {
+    width: 10px;
+    height: 16px;
+  }
+  
+  .header-contact {
+    display: flex;
+  }
+  
+  .header-contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header-contact-item:first-child {
+    margin-right: 30px;
+  }
+  
+  .header-menu-link {
+    position: relative;
+    display: flex;
+    color: #212121;
+    margin-left: 10px;
+  }
+  
+  .header-menu-link.active::after {
+    content: "";
+    position: absolute;
+    bottom: -32px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 4px;
+    background-color: #2196f3;
+    animation: animate125 3000ms infinite 1000ms;
+  }
+  
+  @keyframes animate125 {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(1.25);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .active {
+    color: #2196f3;
+  }
+  
+  .header-menu-link {
+    margin-right: 50px;
+  }
+  
+  .header-menu-link:hover {
+    color: #2196f3;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+  }
+  
+  .header-contact-link {
+    color: #757575;
+    margin-left: 10px;
+  }
+  
+  .header-contact-item:hover {
+    fill: #2196f3;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+  }
+  
+  .header-contact-link:hover {
+    color: #2196f3;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+  }
+  

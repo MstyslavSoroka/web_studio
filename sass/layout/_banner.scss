@@ -1,0 +1,35 @@
+.banner {
+    margin-top: 0;
+    text-align: center;
+    height: 600px;
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(img/background.jpg);
+    margin-bottom: 94px;
+  }
+  
+  .main-heading {
+    padding-top: 200px;
+    color: white;
+    font-weight: 900;
+    font-size: 44px;
+    text-align: center;
+    margin-bottom: 23px;
+  }
+  
+  .btn-open {
+    color: white;
+    background-color: #2196f3;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0 auto;
+    display: block;
+    width: 216px;
+    height: 50px;
+    border-radius: 5px;
+  }
+  
+  .btn-open:hover {
+    transform: scale(1.05);
+  }

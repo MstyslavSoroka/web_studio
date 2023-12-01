@@ -1,0 +1,30 @@
+.section-heading {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+.main-list-images {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 94px;
+}
+.main-list-images-item {
+  position: relative;
+  text-align: center;
+}
+.image-label {
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding-bottom: 35px;
+  padding-top: 35px;
+  background-color: #2f303acc;
+  opacity: 0.8;
+}

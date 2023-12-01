@@ -1,0 +1,33 @@
+.main-button-list {
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    justify-content: center;
+    margin-bottom: 34px;
+  }
+  
+  .button-section {
+    margin-top: 94px;
+  }
+  
+  .portfolio-button {
+    border: none;
+    margin-right: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+  }
+  
+  .portfolio-button:hover {
+    background-color: #2196f3;
+    color: #fff;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+    transition-property: background-color;
+    transition-duration: 1250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+  }
+  
+  .button-description {
+    margin: 6px 22px 6px 22px;
+  }

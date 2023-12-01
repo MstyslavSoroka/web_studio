@@ -1,0 +1,32 @@
+.main-list {
+    display: flex;
+  }
+  
+  .main-subheading {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .main-description {
+    font-weight: 400;
+    font-size: 14px;
+    width: 270px;
+    color: #757575;
+  }
+  .description-svg {
+    height: 70px;
+    width: 70px;
+  }
+  .svg-div {
+    display: flex;
+    height: 120px;
+    width: 270px;
+    background-color: #f5f4fa;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .main-list-item {
+    margin-right: 30px;
+  }
