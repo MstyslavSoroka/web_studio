@@ -1,5 +1,5 @@
 .team-section {
-    background-color: #f5f4fa;
+    background-color: $teamsection_and_svg-div;
     padding: 5px;
   }
 
@@ -23,7 +23,7 @@
   .icon {
     height: 20px;
     width: 20px;
-    fill: #afb1b8;
+    fill: $socialmedia_and_clients;
   }
 
   .svg-list {
@@ -44,7 +44,7 @@
     border-radius: 25px;
   }
   .svg-list-item:hover {
-    background-color: #2196f3;
+    background-color: $maincolour;
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -59,7 +59,7 @@
     transition-delay: 0;
   }
   .main-description-job {
-    color: #757575;
+    color: $contacts_modalp_and_descriptions;
     text-align: center;
     margin-bottom: 30px;
   }

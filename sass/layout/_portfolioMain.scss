@@ -1,13 +1,13 @@
 .main-link {
     font-weight: 700;
     font-size: 18px;
-    color: #212121;
+    color: $header-link_modal-heading_header-link;
     margin-top: 20px;
     margin-left: 24px;
   }
   
   .image-description {
-    color: #757575;
+    color: $contacts_modalp_and_descriptions;
     font-weight: 400;
     font-size: 16px;
     margin: 10px 0 20px 24px;
@@ -26,7 +26,7 @@
   .portfolio-main {
     display: flex;
     flex-direction: column;
-    border: 1px solid #eeeeee;
+    border: 1px solid $portfolio-card-border;
     position: relative;
   }
   
@@ -40,7 +40,7 @@
     height: 294px;
     width: 370px;
     top: 0;
-    background-color: #2196F3E5;
+    background-color: $overlay;
     opacity: 0;
   }
   

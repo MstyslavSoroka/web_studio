@@ -18,11 +18,11 @@
     justify-content: center;
     height: 92px;
     width: 170px;
-    border: 1px solid #afb1b8;
+    border: 1px solid $socialmedia_and_clients;
   }
   
   .clients-list-item:hover>svg {
-    fill: #2196f3;
+    fill: $maincolour;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -30,7 +30,7 @@
   }
   
   .clients-list-item:hover {
-    border: 1px solid #2196f3;
+    border: 1px solid $maincolour;
     transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -44,6 +44,6 @@
   .client-svg {
     height: 60px;
     width: 106px;
-    fill: #afb1b8;
+    fill: $socialmedia_and_clients;
   }
   

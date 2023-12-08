@@ -1,5 +1,5 @@
 .footer {
-    background-color: #2f303a;
+    background-color: $footer-color;
     font-weight: 400;
     font-size: 14px;
     display: flex;
@@ -19,19 +19,19 @@
     font-family: "Raleway", sans-serif;
     font-size: 26px;
     font-weight: 700;
-    color: #2196f3;
+    color: $maincolour;
   }
   
   .footer-studio {
-    color: white;
+    color: #fff;
   }
   
   .footer-address {
-    color: white;
+    color: #fff;
   }
   
   .footer-contact {
-    color: white;
+    color: #fff;
   }
   
   .footer-list {
@@ -68,12 +68,12 @@
     margin-right: 10px;
     align-items: center;
     justify-content: center;
-    background: #ffffff1a;
+    background: $footersvg;
     border-radius: 25px;
   }
   
   .footer-svg-list-item:hover {
-    background-color: #2196f3;
+    background-color: $maincolour;
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -105,9 +105,9 @@
   .footer-email {
     height: 50px;
     width: 358px;
-    border: 1px solid #ffffff4d;
+    border: 1px solid $footeremail;
     border-radius: 4px;
-    background-color: #2f303a;
+    background-color: $footer-color;
   }
   
   .footer-email::placeholder {
@@ -122,7 +122,7 @@
     width: 200px;
     margin-left: 12px;
     border-radius: 4px;
-    background-color: #2196f3;
+    background-color: $maincolour;
     color: #fff;
     font-weight: 700px;
     font-size: 16px;

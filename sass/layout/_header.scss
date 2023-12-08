@@ -2,16 +2,16 @@
     font-family: "Raleway", sans-serif;
     font-size: 26px;
     font-weight: 700;
-    color: #2196f3;
+    color: $maincolour;
     margin-right: 93px;
   }
   
   .header-webstudio {
-    color: rgb(0, 0, 0);
+    color: #000000;
   }
   
   .header-web {
-    color: #2196f3;
+    color: $maincolour;
   }
   
   .header {
@@ -21,7 +21,7 @@
     align-items: center;
     font-weight: 500;
     font-size: 14px;
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid $headerborder;
   }
   
   .header-wrap {
@@ -63,7 +63,7 @@
   .header-menu-link {
     position: relative;
     display: flex;
-    color: #212121;
+    color: $header-link_modal-heading_header-link;
     margin-left: 10px;
   }
   
@@ -75,7 +75,7 @@
     width: 100%;
     height: 3px;
     border-radius: 4px;
-    background-color: #2196f3;
+    background-color: $maincolour;
     animation: animate125 3000ms infinite 1000ms;
   }
   
@@ -94,7 +94,7 @@
   }
   
   .active {
-    color: #2196f3;
+    color: $maincolour;
   }
   
   .header-menu-link {
@@ -102,7 +102,7 @@
   }
   
   .header-menu-link:hover {
-    color: #2196f3;
+    color: $maincolour;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -110,12 +110,12 @@
   }
   
   .header-contact-link {
-    color: #757575;
+    color: $contacts_modalp_and_descriptions;
     margin-left: 10px;
   }
   
   .header-contact-item:hover {
-    fill: #2196f3;
+    fill: $maincolour;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -123,7 +123,7 @@
   }
   
   .header-contact-link:hover {
-    color: #2196f3;
+    color: $maincolour;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
