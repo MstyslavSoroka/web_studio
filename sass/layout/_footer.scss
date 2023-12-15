@@ -62,12 +62,10 @@
   }
   
   .footer-svg-list-item {
-    display: flex;
     height: 44px;
     width: 44px;
     margin-right: 10px;
-    align-items: center;
-    justify-content: center;
+    @extend %flex-center;
     background: $footersvg;
     border-radius: 25px;
   }

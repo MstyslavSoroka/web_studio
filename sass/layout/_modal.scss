@@ -146,7 +146,7 @@
   }
   
   .send-button:hover {
-    transform: scale(1.05);
+    @extend %scale1_05;
     background-color: $maincolour;
   }
   

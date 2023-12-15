@@ -35,12 +35,10 @@
 
   .svg-list-item {
     background-color: #fff;
-    display: flex;
     height: 44px;
     width: 44px;
     margin-right: 10px;
-    align-items: center;
-    justify-content: center;
+    @extend %flex-center;
     border-radius: 25px;
   }
   .svg-list-item:hover {

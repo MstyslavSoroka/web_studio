@@ -16,18 +16,14 @@
   
   .header {
     height: 80px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+    @extend %flex-center;
     font-weight: 500;
     font-size: 14px;
     border-bottom: 1px solid $headerborder;
   }
   
   .header-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex-center;
   }
   
   .header-menu {
@@ -51,9 +47,7 @@
   }
   
   .header-contact-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex-center;
   }
   
   .header-contact-item:first-child {

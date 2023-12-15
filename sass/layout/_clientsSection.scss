@@ -13,9 +13,7 @@
   }
   
   .clients-list-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex-center;
     height: 92px;
     width: 170px;
     border: 1px solid $socialmedia_and_clients;

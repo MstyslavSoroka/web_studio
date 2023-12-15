@@ -1,3 +1,13 @@
+.footer-svg-list-item, .clients-list-item, .svg-list-item, .svg-div, .header-contact-item, .header-wrap, .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.send-button:hover, .btn-open:hover {
+  transform: scale(1.05);
+}
+
 *,
 *::before,
 *::after {
@@ -55,18 +65,9 @@ body {
 
 .header {
   height: 80px;
-  justify-content: center;
-  display: flex;
-  align-items: center;
   font-weight: 500;
   font-size: 14px;
   border-bottom: 1px solid #ececec;
-}
-
-.header-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .header-menu {
@@ -87,12 +88,6 @@ body {
 
 .header-contact {
   display: flex;
-}
-
-.header-contact-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .header-contact-item:first-child {
@@ -193,10 +188,6 @@ body {
   width: 216px;
   height: 50px;
   border-radius: 5px;
-}
-
-.btn-open:hover {
-  transform: scale(1.05);
 }
 
 .backdrop {
@@ -342,7 +333,6 @@ body {
 }
 
 .send-button:hover {
-  transform: scale(1.05);
   background-color: #2196f3;
 }
 
@@ -397,12 +387,9 @@ body {
 }
 
 .svg-div {
-  display: flex;
   height: 120px;
   width: 270px;
   background-color: #f5f4fa;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -482,12 +469,9 @@ body {
 
 .svg-list-item {
   background-color: #fff;
-  display: flex;
   height: 44px;
   width: 44px;
   margin-right: 10px;
-  align-items: center;
-  justify-content: center;
   border-radius: 25px;
 }
 
@@ -540,9 +524,6 @@ body {
 }
 
 .clients-list-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 92px;
   width: 170px;
   border: 1px solid #afb1b8;
@@ -731,12 +712,9 @@ body {
 }
 
 .footer-svg-list-item {
-  display: flex;
   height: 44px;
   width: 44px;
   margin-right: 10px;
-  align-items: center;
-  justify-content: center;
   background: rgba(255, 255, 255, 0.1019607843);
   border-radius: 25px;
 }
