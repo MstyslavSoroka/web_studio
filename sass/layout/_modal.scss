@@ -96,23 +96,24 @@
   }
   
   .comment-label>textarea {
+    @include border(#21212133);
     margin-bottom: 20px;
     max-height: 120px;
     min-height: 120px;
     max-width: 448px;
     min-width: 448px;
-    border: 1px solid #21212133;
+    
     border-radius: 4px;
   }
   
   .registration-label>textarea:hover {
-    border: 1px solid $maincolour;
+    @include border($maincolour);
   }
   
   .registration-label:hover>svg,
   .registration-label:hover {
     fill: $maincolour;
-    border: 1px solid $maincolour;
+    @include border($maincolour);
   }
   
   .registration-label:hover>svg {
@@ -164,7 +165,7 @@
     height: 30px;
     border-radius: 50%;
     background-color: #fff;
-    border: 1px solid #0000001a;
+    @include border(#0000001a);
     margin-left: 480px;
     margin-top: 8px;
   }

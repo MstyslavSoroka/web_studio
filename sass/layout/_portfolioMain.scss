@@ -26,7 +26,7 @@
   .portfolio-main {
     display: flex;
     flex-direction: column;
-    border: 1px solid $portfolio-card-border;
+    @include border($portfolio-card-border);
     position: relative;
   }
   

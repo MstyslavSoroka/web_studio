@@ -103,7 +103,7 @@
   .footer-email {
     height: 50px;
     width: 358px;
-    border: 1px solid $footeremail;
+    @include border($footeremail);
     border-radius: 4px;
     background-color: $footer-color;
   }

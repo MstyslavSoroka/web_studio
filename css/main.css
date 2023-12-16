@@ -283,12 +283,12 @@ body {
 }
 
 .comment-label > textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
   margin-bottom: 20px;
   max-height: 120px;
   min-height: 120px;
   max-width: 448px;
   min-width: 448px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
 
