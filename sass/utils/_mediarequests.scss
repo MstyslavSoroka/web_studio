@@ -1,0 +1,57 @@
+@media (min-width: 320px) {
+    body {
+       overflow-x: hidden;   
+    }
+    }
+@media screen and (max-width: 768px) {
+        .photo-section {
+            display: none;
+        }
+    }
+
+@media screen and (max-width: 480px)  {
+    .header-menu, .header-contact {
+        display: none;
+    }
+
+    .banner {
+        margin-top: 0;
+        text-align: center;
+        background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../img/background.jpg);
+        background-size: cover;
+        height: 400px;
+      }
+
+      .main-heading {
+        padding-top: 118px;
+        font-size: 26px;
+      }
+      
+      .btn-open {
+        font-size: 16px;
+        width: 200px;
+        height: 50px;
+        border-radius: 5px;
+      }
+
+
+      .main-list, .main-list-team {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .clients-list {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      footer {
+        display: flex;
+        flex-direction: column;
+      }
+      }
