@@ -53,9 +53,6 @@ body {
   font-weight: 700;
   color: #2196f3;
   margin-right: 93px;
-}
-
-.header-webstudio {
   color: #000000;
 }
 
@@ -795,51 +792,94 @@ body {
   margin-left: 28px;
 }
 
-@media (min-width: 320px) {
-  body {
-    overflow-x: hidden;
-  }
+body {
+  display: flex;
+  flex-direction: column;
 }
-@media screen and (max-width: 768px) {
-  .photo-section {
-    display: none;
-  }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-width: 320px;
 }
-@media screen and (max-width: 480px) {
-  .header-menu, .header-contact {
-    display: none;
-  }
+
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+@media screen and (min-width: 320px) {
+  .header {
+    height: 60px;
+  }
+  .header-nav, .header-contact {
+    display: none;
+  }
+  .header-webstudio {
+    display: flex;
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #000000;
+  }
+  .header-web {
+    color: #2196f3;
+  }
+  .header-wrap {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    height: 80px;
+  }
+  .header-nav, .header-contact {
+    display: flex;
+  }
+  .header-modal-svg {
+    display: none;
+  }
+}
+@media screen and (min-width: 320px) {
   .banner {
     margin-top: 0;
     text-align: center;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background.jpg);
-    background-size: cover;
     height: 400px;
+    width: 100vw;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background.jpg);
+    margin-bottom: 94px;
+    background-size: cover;
+    background-position: center;
   }
   .main-heading {
-    padding-top: 118px;
+    margin-top: 118px;
+    color: white;
+    font-weight: 900;
     font-size: 26px;
+    text-align: center;
   }
   .btn-open {
+    color: white;
+    background-color: #2196f3;
+    font-weight: 700;
     font-size: 16px;
-    width: 200px;
+    width: 216px;
     height: 50px;
     border-radius: 5px;
-  }
-  .main-list, .main-list-team {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .clients-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  footer {
-    display: flex;
-    flex-direction: column;
   }
 }/*# sourceMappingURL=main.css.map */
