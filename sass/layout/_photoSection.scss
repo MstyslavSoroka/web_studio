@@ -1,4 +1,11 @@
-.section-heading {
+.photo-section {
+  display: none;
+}
+@media  screen and (min-width: 1200px) {
+  .photo-section {
+    display: block;
+   }
+  .section-heading {
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -28,3 +35,5 @@
   background-color: #2f303acc;
   opacity: 0.8;
 }
+ 
+  }

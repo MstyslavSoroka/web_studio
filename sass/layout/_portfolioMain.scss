@@ -17,19 +17,20 @@
     display: flex;
     flex-wrap: wrap;
     gap: 27px;
-  }
-  
-  .main-portfolio-list:nth-last-child(-n + 3) {
     margin-bottom: 94px;
+    // justify-content: center;
   }
   
-  .portfolio-main {
+  .portfolio-list-item {
     display: flex;
     flex-direction: column;
     @include border($portfolio-card-border);
     position: relative;
+    }
+  .main-image {
+    max-width: 450px;
+    max-height: 294px;
   }
-  
   .portfolio-main:hover {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
   }
@@ -57,3 +58,17 @@
     opacity: 0.9;
   }
   
+
+  @media screen and (min-width: 768px) {
+    .portfolio-list-item {
+      width: 48%;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+     .portfolio-list-item {
+      height: 404px;
+      width: 370px;
+    }
+    
+  }

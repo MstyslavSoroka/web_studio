@@ -1,13 +1,10 @@
 .main-button-list {
     display: flex;
+    flex-wrap: wrap;
     font-weight: 500;
     font-size: 16px;
-    justify-content: center;
     margin-bottom: 34px;
-  }
-  
-  .button-section {
-    margin-top: 94px;
+    margin-top: 60px;
   }
   
   .portfolio-button {
@@ -17,7 +14,12 @@
     border-radius: 5px;
     background-color: $portfolio-buttons;
   }
-  
+  .main-button-list-item:nth-child(3){
+    margin-right: 50px;
+  }
+  .main-button-list-item:nth-last-child(-n + 2){
+    margin-top: 15px;
+  }
   .portfolio-button:hover {
     background-color: $maincolour;
     color: #fff;
@@ -30,4 +32,23 @@
   
   .button-description {
     margin: 6px 22px 6px 22px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .main-button-list {
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      
+    }
+
+    .main-button-list-item:nth-child(3){
+      margin-right: 0px;
+    }
+
+    .main-button-list-item:nth-last-child(-n + 2){
+      margin-top: 0px;
+    }
+
+    
   }

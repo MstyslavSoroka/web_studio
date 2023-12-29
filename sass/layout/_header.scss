@@ -1,67 +1,81 @@
-.header-webstudio {
+
+  .header {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid $headerborder;
+    max-height: 80px;
+  }
+   .header-nav, .header-contact {
+    display: none;
+   }
+   
+   .header-logo {
+    display: flex;
     font-family: "Raleway", sans-serif;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
-    color: $maincolour;
-    margin-right: 93px;
     color: #000000;
   }
-  
+
   .header-web {
     color: $maincolour;
   }
-  
-  .header {
-    height: 80px;
-    @extend %flex-center;
-    font-weight: 500;
-    font-size: 14px;
-    border-bottom: 1px solid $headerborder;
-  }
-  
+
   .header-wrap {
-    @extend %flex-center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
+
+@media  screen and (min-width: 768px) {
+  .header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  .header-nav, .header-contact {
+    display: flex;
+   }
+
+  .header-modal-svg {
+    display: none;
+  }
+  
   
   .header-menu {
     display: flex;
-    width: 218px;
-    margin-right: 344px;
+    margin-left: 88px;
+    margin-right: 92px;
+    column-gap: 51px;
   }
   
   .email-svg {
-    height: 12px;
-    width: 16px;
+    height: 10px;
+    width: 14px;
   }
   
   .phone-svg {
     width: 10px;
-    height: 16px;
+    height: 14px;
   }
   
   .header-contact {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
   }
   
-  .header-contact-item {
-    @extend %flex-center;
-  }
-  
-  .header-contact-item:first-child {
-    margin-right: 30px;
-  }
   
   .header-menu-link {
-    position: relative;
     display: flex;
     color: $header-link_modal-heading_header-link;
-    margin-left: 10px;
+    font-size: 14px;
+    position: relative;
   }
   
   .header-menu-link.active::after {
     content: "";
     position: absolute;
-    bottom: -32px;
+    bottom: -29px;
     left: 0;
     width: 100%;
     height: 3px;
@@ -88,10 +102,6 @@
     color: $maincolour;
   }
   
-  .header-menu-link {
-    margin-right: 50px;
-  }
-  
   .header-menu-link:hover {
     color: $maincolour;
     transition-property: color;
@@ -102,9 +112,13 @@
   
   .header-contact-link {
     color: $contacts_modalp_and_descriptions;
-    margin-left: 10px;
+    margin-left: 8px;
+    font-size: 12px;
   }
-  
+  .header-contact-item {
+    column-gap: 10px;
+
+  }
   .header-contact-item:hover {
     fill: $maincolour;
     transition-property: fill;
@@ -121,3 +135,26 @@
     transition-delay: 0;
   }
   
+}
+
+@media  screen and (min-width: 1200px) {
+  .header-contact {
+    column-gap: 30px;
+  }
+  .header-contact-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-menu-link {
+    font-size: 16px;
+  }
+  .header-contact-link {
+    font-size: 16px;
+  }
+  
+  .header-menu-link.active::after {
+    bottom: -32px;
+    
+  }
+}

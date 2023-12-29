@@ -1,16 +1,16 @@
+ @import "utils/variables.scss";
  @import "utils/placeholders"; 
  @import "utils/mixin.scss";
  @import "base/reset";
- @import "utils/variables.scss";
-// @import "utils/container";
+ @import "utils/container";
+ @import "utils/media";
  @import "layout/header";
-// @import "layout/banner";
+ @import "layout/banner";
  @import "layout/modal";
-// @import "layout/descriptionSection";
-// @import "layout/photoSection";
-// @import "layout/teamSection";
-// @import "layout/clientsSection";
-// @import "layout/portfolioButtons";
-// @import "layout/portfolioMain";
-// @import "layout/footer";
-@import "utils/mediarequests"
+ @import "layout/descriptionSection";
+ @import "layout/photoSection";
+ @import "layout/teamSection";
+ @import "layout/clientsSection";
+ @import "layout/portfolioButtons";
+ @import "layout/portfolioMain";
+ @import "layout/footer";
