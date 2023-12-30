@@ -39,6 +39,7 @@ ul {
 
 body {
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -61,11 +62,6 @@ body {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-  }
-}
-@media screen and (min-width: 320px) {
-  body {
-    overflow-x: hidden;
   }
 }
 .header {
