@@ -2,6 +2,9 @@
    padding-bottom: 60px;
 }
 
+.team-item {
+  margin-bottom: 30px;
+}
 .main-team-image {
   width: 100%;
   height: 100%;
@@ -98,7 +101,6 @@
 
   @media screen and (min-width: 1200px) {
     .main-list-team {
-      gap: 30px;
       flex-wrap: nowrap;
     }
     .main-team-image {
