@@ -3,7 +3,9 @@
  @import "utils/mixin.scss";
  @import "base/reset";
  @import "utils/container";
+ @import "layout/headermodal";
  @import "layout/header";
+ 
  @import "layout/banner";
  @import "layout/modal";
  @import "layout/descriptionSection";
@@ -13,4 +15,3 @@
  @import "layout/portfolioButtons";
  @import "layout/portfolioMain";
  @import "layout/footer";
- @import "layout/headermodal";
