@@ -338,23 +338,41 @@ body {
   }
 }
 .banner {
-  margin-top: 0;
   text-align: center;
-  height: 400px;
-  width: 100vw;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background-mobile.jpg);
   margin-bottom: 94px;
-  background-size: cover;
-  background-position: center;
+  background-size: 100vw auto;
+  background-repeat: no-repeat;
 }
 
+@media screen and (min-width: 768px) {
+  .banner {
+    background-image: url(../img/background-tablet.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .banner {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .banner {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..img/background-tablet-2x.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .banner {
+    background-size: 100vw auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background-2x.jpg);
+  }
+}
 .main-heading {
   color: white;
   font-weight: 900;
   font-size: 26px;
   text-align: center;
-  padding-top: 118px;
-  padding-bottom: 40px;
+  padding-top: 100px;
+  padding-bottom: 30px;
   line-height: 42px;
 }
 
@@ -366,15 +384,20 @@ body {
   width: 216px;
   height: 50px;
   border-radius: 5px;
+  margin-bottom: 100px;
 }
 
 @media screen and (min-width: 1200px) {
   .banner {
     height: 600px;
+    background-size: 100vw 600px;
     background-position: top;
   }
   .main-heading {
     padding-top: 200px;
+  }
+  .btn-open {
+    margin-bottom: 200px;
   }
 }
 .backdrop {

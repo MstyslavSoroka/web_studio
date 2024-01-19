@@ -21,16 +21,55 @@
     <div class="container header-wrap">
       <a class="header-logo" href="index.html">
         <span class="header-web">Web</span>Studio</a>
-        <svg width="40" height="40" class="header-modal-svg">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+        <svg id="header-modal-svg" width="40" height="40" class="header-modal-svg">
           <use href="icons.svg#icon-menu_40px"></use>
-        </svg>
+         </svg>
+        </button>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg
+            class="header-modal-close"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+    
+          <ul class="menu-list">
+            <li><a href="index.html" class="link">Студія</a></li>
+            <li><a href="portfolio.html" class="link">Портфоліо</a></li>
+            <li><a href="#" class="link">Контакти</a></li>
+          </ul>
+          <ul class="menu-contact-list">
+            <li><a href="tel:+380961111111" class="menu-contact-link menu-number">+38 096 111 11 11</a></li>
+            <li><a href="mailto:info@devstudio.com" class="menu-contact-link menu-email">info@devstudio.com</a></li>
+          </ul>
+          <ul class="social-list">
+            <li><p class="social-name">Instagram</p></li>
+            <li><p class="social-name">Twitter</p></li>
+            <li><p class="social-name">Facebook</p></li>
+            <li><p class="social-name">LinkedIn</p></li>
+
+          </ul>
+        </div>
       <nav class="header-nav">
         <ul class="header-menu">
-          <li><a href="index.html" class="header-menu-link">Студія</a></li>
-          <li>
-            <a href="portfolio.html" class="header-menu-link active">Портфоліо</a>
+          <li class="header-menu-item" ><a href="index.html" class="header-menu-link active">Студія</a></li>
+          <li class="header-menu-item">
+            <a href="portfolio.html" class="header-menu-link">Портфоліо</a>
           </li>
-          <li><a href="#" class="header-menu-link">Контакти</a></li>
+          <li class="header-menu-item"><a href="#" class="header-menu-link">Контакти</a></li>
         </ul>
       </nav>
       <ul class="header-contact">
@@ -49,7 +88,7 @@
       </ul>
     </div>
   </header>
-  <main class="main container">
+  <main class="container">
     <section class="button-section">
         <ul class="main-button-list">
           <li class="main-button-list-item"><button type="button" class="portfolio-button"><p class="button-description">Усі</p></button></li>
@@ -70,7 +109,7 @@
     <section class="portfolio-main-section">
       <ul class="main-portfolio-list">
         <li class="portfolio-list-item">
-          <img src="img/img(1).jpg" alt="ноутбук" class="main-image" />
+          <img src="img/portfoliocard1.jpg" alt="ноутбук" class="main-image" />
           <div class="overlay">
             <p class="overlay-p">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
           </div>
@@ -78,7 +117,7 @@
           <p class="image-description">Веб-Сайт</p>
         </li>
         <li class="portfolio-list-item">
-          <img src="img/img(2).jpg" alt="Баскетболісти" class="main-image" />
+          <img src="img/portfoliocard2.jpg" alt="Баскетболісти" class="main-image" />
           <div class="overlay">
             <p class="overlay-p">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
           </div>
@@ -86,7 +125,7 @@
           <p class="image-description">Дизайн</p>
         </li>
         <li class="portfolio-list-item">
-          <img src="img/img(3).jpg" alt="Логотип ресторану" class="main-image" />
+          <img src="img/portfoliocard3.jpg" alt="Логотип ресторану" class="main-image" />
           <div class="overlay">
             <p class="overlay-p">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
           </div>
@@ -94,7 +133,7 @@
           <p class="image-description">Додаток</p>
         </li>
         <li class="portfolio-list-item">
-          <img src="img/img(4).jpg" alt="Навушники" class="main-image" />
+          <img src="img/portfoliocard4.jpg" alt="Навушники" class="main-image" />
           <div class="overlay">
             <p class="overlay-p">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
           </div>
@@ -102,7 +141,7 @@
           <p class="image-description">Маркетинг</p>
         </li>
         <li class="portfolio-list-item">
-          <img src="img/img(5).jpg" alt="Коробки" class="main-image" />
+          <img src="img/portfoliocard5.jpg" alt="Коробки" class="main-image" />
           <div class="overlay">
             <p class="overlay-p">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
           </div>
@@ -110,7 +149,7 @@
           <p class="image-description">Додаток</p>
         </li>
         <li class="portfolio-list-item">
-          <img src="img/img(6).jpg" alt="Монітор" class="main-image" />
+          <img src="img/portfoliocard6.jpg" alt="Монітор" class="main-image" />
           <div class="overlay">
             <p class="overlay-p">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
           </div>
@@ -118,7 +157,7 @@
           <p class="image-description">Веб-Сайт</p>
         </li>
         <li class="portfolio-list-item">
-          <img src="img/img(7).jpg" alt="Книга" class="main-image" />
+          <img src="img/portfoliocard7.jpg" alt="Книга" class="main-image" />
           <div class="overlay">
             <p class="overlay-p">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
           </div>
@@ -126,7 +165,7 @@
           <p class="image-description">Дизайн</p>
         </li>
         <li class="portfolio-list-item">
-          <img src="img/img(8).jpg" alt="Бірка" class="main-image" />
+          <img src="img/portfoliocard8.jpg" alt="Бірка" class="main-image" />
           <div class="overlay">
             <p class="overlay-p">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
           </div>
@@ -134,7 +173,7 @@
           <p class="image-description">Маркетинг</p>
         </li>
         <li class="portfolio-list-item">
-          <img src="img/img(9).jpg" alt="ноутбук" class="main-image" />
+          <img src="img/portfoliocard9.jpg" alt="ноутбук" class="main-image" />
           <div class="overlay">
             <p class="overlay-p">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
           </div>
