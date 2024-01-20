@@ -935,6 +935,10 @@ body {
   opacity: 0;
 }
 
+.overlay:hover {
+  opacity: 1;
+}
+
 .overlay-p {
   font-weight: 400px;
   color: #fff;
