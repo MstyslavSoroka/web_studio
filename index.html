@@ -16,56 +16,54 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="css/main.min.css" />
 </head>
+
 <body>
   <header class="header">
     <div class="container header-wrap">
       <a class="header-logo" href="index.html">
         <span class="header-web">Web</span>Studio</a>
-        <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg id="header-modal-svg" width="40" height="40" class="header-modal-svg">
           <use href="icons.svg#icon-menu_40px"></use>
-         </svg>
+        </svg>
+      </button>
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg class="header-modal-close" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"></path>
+          </svg>
         </button>
-        <div class="menu-container js-menu-container" id="mobile-menu">
-          <button class="menu-toggle js-close-menu">
-            <svg
-            class="header-modal-close"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-    
-          <ul class="menu-list">
-            <li><a href="index.html" class="link">Студія</a></li>
-            <li><a href="portfolio.html" class="link">Портфоліо</a></li>
-            <li><a href="#" class="link">Контакти</a></li>
-          </ul>
-          <ul class="menu-contact-list">
-            <li><a href="tel:+380961111111" class="menu-contact-link menu-number">+38 096 111 11 11</a></li>
-            <li><a href="mailto:info@devstudio.com" class="menu-contact-link menu-email">info@devstudio.com</a></li>
-          </ul>
-          <ul class="social-list">
-            <li><p class="social-name">Instagram</p></li>
-            <li><p class="social-name">Twitter</p></li>
-            <li><p class="social-name">Facebook</p></li>
-            <li><p class="social-name">LinkedIn</p></li>
 
-          </ul>
-        </div>
+        <ul class="menu-list">
+          <li><a href="index.html" class="link">Студія</a></li>
+          <li><a href="portfolio.html" class="link">Портфоліо</a></li>
+          <li><a href="#" class="link">Контакти</a></li>
+        </ul>
+        <ul class="menu-contact-list">
+          <li><a href="tel:+380961111111" class="menu-contact-link menu-number">+38 096 111 11 11</a></li>
+          <li><a href="mailto:info@devstudio.com" class="menu-contact-link menu-email">info@devstudio.com</a></li>
+        </ul>
+        <ul class="social-list">
+          <li>
+            <p class="social-name">Instagram</p>
+          </li>
+          <li>
+            <p class="social-name">Twitter</p>
+          </li>
+          <li>
+            <p class="social-name">Facebook</p>
+          </li>
+          <li>
+            <p class="social-name">LinkedIn</p>
+          </li>
+
+        </ul>
+      </div>
       <nav class="header-nav">
         <ul class="header-menu">
-          <li class="header-menu-item" ><a href="index.html" class="header-menu-link active">Студія</a></li>
+          <li class="header-menu-item"><a href="index.html" class="header-menu-link active">Студія</a></li>
           <li class="header-menu-item">
             <a href="portfolio.html" class="header-menu-link">Портфоліо</a>
           </li>
@@ -103,12 +101,13 @@
           <form class="registration-form">
             <p>Ім'я</p>
             <label class="registration-label">
-              
+
               <svg>
                 <use href="./icons.svg#icon-human"></use>
               </svg>
               <input type="text" name="Name">
-            </label>              <p>Телефон</p>
+            </label>
+            <p>Телефон</p>
             <label class="registration-label">
 
               <svg>
@@ -122,7 +121,8 @@
                 <use href="./icons.svg#icon-email2"></use>
               </svg>
               <input type="email" name="email" />
-            </label><p>Коментар</p>
+            </label>
+            <p>Коментар</p>
             <label class="comment-label">
               <textarea name="comment" id="comment"></textarea>
             </label>
@@ -192,15 +192,24 @@
       <h2 class="section-heading">Чим ми займаємося</h2>
       <ul class="main-list-images">
         <li class="main-list-images-item">
-          <img src="img/job1.jpg" alt="зображення" class="main-image" width="370" height="294" />
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/desktop/job1.jpg 1x, ./img/desktop-2x/job1-2x.jpg 2x" />
+            <img src="./img/desktop/job1.jpg" alt="img" width="370" height="294" />
+          </picture>
           <p class="image-label">ДЕСКТОПНІ ДОДАТКИ</p>
         </li>
         <li class="main-list-images-item">
-          <img src="img/job2.jpg" alt="зображення" class="main-image" width="370" height="294" />
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/desktop/job2.jpg 1x, ./img/desktop-2x/job2-2x.jpg 2x" />
+            <img src="./img/desktop/job2.jpg" alt="img" width="370" height="294" />
+          </picture>
           <p class="image-label">МОБІЛЬНІ ДОДАТКИ</p>
         </li>
         <li class="main-list-images-item">
-          <img src="img/job3.jpg" alt="зображення" class="main-image" width="370" height="294" />
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/desktop/job3.jpg 1x, ./img/desktop-2x/job3-2x.jpg 2x" />
+            <img src="./img/desktop/job3.jpg" alt="img" width="370" height="294" />
+          </picture>
           <p class="image-label">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
         </li>
       </ul>
@@ -210,7 +219,17 @@
         <h2 class="section-heading">Наша команда</h2>
         <ul class="main-list-team">
           <li class="team-item">
-            <img src="img/teamimg1.jpg" alt="Наша команда" class="main-team-image"  />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="img/desktop/teamimg1-desktop.jpg 1x, img/desktop-2x/teamimg1-desktop-2x.jpg 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/tablet/teamimg1-tablet.jpg 1x, img/tablet-2x/teamimg1-tablet-2x.jpg 2x"
+              />
+              <img src="img/mobile/teamimg1-mobile.jpg " alt="Наша команда" class="main-team-image" />
+            </picture>
             <h4 class="main-name">Ігор Дем'яненко</h4>
             <p class="main-description-job">Product Designer</p>
             <ul class="svg-list">
@@ -237,7 +256,17 @@
             </ul>
           </li>
           <li class="team-item">
-            <img src="img/teamimg2.jpg" alt="Наша команда" class="main-team-image" />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="img/desktop/teamimg2-desktop.jpg 1x, img/desktop-2x/teamimg2-desktop-2x.jpg 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/tablet/teamimg2-tablet.jpg 1x, img/tablet-2x/teamimg2-tablet-2x.jpg 2x"
+              />
+              <img src="img/mobile/teamimg2-mobile.jpg " alt="Наша команда" class="main-team-image" />
+            </picture>
             <h4 class="main-name">Ольга Рєпіна</h4>
             <p class="main-description-job">Frontend Developer</p>
             <ul class="svg-list">
@@ -264,7 +293,17 @@
             </ul>
           </li>
           <li class="team-item">
-            <img src="img/teamimg3.jpg" alt="Наша команд" class="main-team-image" />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="img/desktop/teamimg3-desktop.jpg 1x, img/desktop-2x/teamimg3-desktop-2x.jpg 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/tablet/teamimg3-tablet.jpg 1x, img/tablet-2x/teamimg3-tablet-2x.jpg 2x"
+              />
+              <img src="img/mobile/teamimg3-mobile.jpg " alt="Наша команда" class="main-team-image" />
+            </picture>
             <h4 class="main-name">Микола Тарасов</h4>
             <p class="main-description-job">Marketing</p>
             <ul class="svg-list">
@@ -291,7 +330,17 @@
             </ul>
           </li>
           <li class="team-item">
-            <img src="img/teamimg4.jpg" alt="Наша команд" class="main-team-image" />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="img/desktop/teamimg4-desktop.jpg 1x, img/desktop-2x/teamimg4-desktop-2x.jpg 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/tablet/teamimg4-tablet.jpg 1x, img/tablet-2x/teamimg4-tablet-2x.jpg 2x"
+              />
+              <img src="img/mobile/teamimg4-mobile.jpg " alt="Наша команда" class="main-team-image"/>
+            </picture>
             <h4 class="main-name">Михайло Єрмаков</h4>
             <p class="main-description-job">UI Designer</p>
             <ul class="svg-list">
@@ -359,20 +408,21 @@
   <footer class="footer">
     <div class="container footer-div">
       <div class="footer-main-div">
-      <a class="footer-webstudio" href="#">Web<span class="footer-studio">Studio</span></a>
-      <div class="footer-block">
-        <ul class="footer-list">
-          <li class="footer-list-item">
-            <a href="https://goo.gl/maps/LNZbK8tX5sq8bWxk8" class="footer-address">Місто Київ пр-т Лесі Українки, 26</a>
-          </li>
-          <li class="footer-list-item">
-            <a href="mailto:info@devstudio.com" class="footer-contact">info@devstudio.com</a>
-          </li>
-          <li class="footer-list-item">
-            <a href="tel:+380961111111" class="footer-contact">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </div>
+        <a class="footer-webstudio" href="#">Web<span class="footer-studio">Studio</span></a>
+        <div class="footer-block">
+          <ul class="footer-list">
+            <li class="footer-list-item">
+              <a href="https://goo.gl/maps/LNZbK8tX5sq8bWxk8" class="footer-address">Місто Київ пр-т Лесі Українки,
+                26</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="mailto:info@devstudio.com" class="footer-contact">info@devstudio.com</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="tel:+380961111111" class="footer-contact">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
         <div class="footer-wrapper">
           <h5 class="footer-heading">ПРИЄДНУЙТЕСЬ</h5>
           <ul class="footer-svg-list">
@@ -398,18 +448,19 @@
             </li>
           </ul>
         </div>
-          <form class="footer-form">
-            <label class="footer-label">
-              <h5 class="footer-heading">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h5>
-              <input class="footer-email" type="email" name="email" placeholder="    E-mail">
-            </label>
-          <button class="subscribe-button" type="submit"><div class="button-wrapper">Підписатися 
-            <svg class="icon-send">
-              <use href="./icons.svg#icon-send"></use>
-            </svg>
+        <form class="footer-form">
+          <label class="footer-label">
+            <h5 class="footer-heading">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h5>
+            <input class="footer-email" type="email" name="email" placeholder="    E-mail">
+          </label>
+          <button class="subscribe-button" type="submit">
+            <div class="button-wrapper">Підписатися
+              <svg class="icon-send">
+                <use href="./icons.svg#icon-send"></use>
+              </svg>
           </button>
-          </form>
-        </div>
+        </form>
+      </div>
     </div>
   </footer>
   <script src="./modal.js"></script>

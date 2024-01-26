@@ -3,7 +3,7 @@
   background-image: linear-gradient(to right,
   rgba(47, 48, 58, 0.4),
   rgba(47, 48, 58, 0.4)),
-  url(../img/background-mobile.jpg);
+  url(../img/mobile/background-mobile.jpg);
   margin-bottom: 94px;
   background-size: 100vw auto;
   background-repeat: no-repeat;
@@ -15,7 +15,7 @@
   .banner { 
     background-image: linear-gradient(to right,
   rgba(47, 48, 58, 0.4),
-  rgba(47, 48, 58, 0.4)), url(../img/background-mobile-2x.jpg);
+  rgba(47, 48, 58, 0.4)), url(../img/mobile-2x/background-mobile-2x.jpg);
   }}
   // ==================================================
   
@@ -23,7 +23,7 @@
     .banner {
       background-image: linear-gradient(to right,
   rgba(47, 48, 58, 0.4),
-  rgba(47, 48, 58, 0.4)), url(../img/background-tablet.jpg);
+  rgba(47, 48, 58, 0.4)), url(../img/tablet/background-tablet.jpg);
     }
   }
 
@@ -34,7 +34,7 @@
     .banner {
       background-image: linear-gradient(to right,
   rgba(47, 48, 58, 0.4),
-  rgba(47, 48, 58, 0.4)), url(../img/background-tablet-2x.jpg);
+  rgba(47, 48, 58, 0.4)), url(../img/tablet-2x/background-tablet-2x.jpg);
     }
   }
 // =========================================================================
@@ -44,7 +44,7 @@
     background-image: linear-gradient(to right,
   rgba(47, 48, 58, 0.4),
   rgba(47, 48, 58, 0.4)),
-  url(../img/background.jpg)
+  url(../img/desktop/background.jpg)
   }
 }
 
@@ -54,7 +54,7 @@
       .banner {
         background-image: linear-gradient(to right,
   rgba(47, 48, 58, 0.4),
-  rgba(47, 48, 58, 0.4)), url(../img/background-2x.jpg);
+  rgba(47, 48, 58, 0.4)), url(../img/desktop-2x/background-2x.jpg);
       }
   }
 

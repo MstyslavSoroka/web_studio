@@ -85,12 +85,12 @@
 
   @media screen and (min-width: 768px) {
     .team-item {
-      width: 47%;
+      width: 48%;
       background-color: #fff;
     }
 
     .main-list-team {
-      gap: 44px;
+      gap: 29px;
       display: flex;
       flex-wrap: wrap;
     }
@@ -102,9 +102,11 @@
   @media screen and (min-width: 1200px) {
     .main-list-team {
       flex-wrap: nowrap;
+      gap: 30px;
     }
     .main-team-image {
       width: 270px;
       height: 260px;
     }
+
   }
